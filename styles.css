@@ -1,0 +1,177 @@
+body {
+  color: #FEF2BF;
+  background-color: black;
+  height: 700px;
+}
+
+#level-title {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  color: #FEF2BF;
+}
+
+.family{
+  position: relative;
+  bottom: 230px;
+}
+.flex-cont {
+  border-radius: 50%;
+  position: relative;
+  margin-left: 0;
+  left: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(67, 66, 66);
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  transform: rotatex(-15deg) translateZ(100px);
+  box-shadow: 0 60px 35px 0px rgb(128, 125, 125);
+  transition: box-shadow 350ms ease-in-out;
+}
+
+.sim{
+  position: relative;
+  z-index: 20;
+  top: 475px;
+  left: 727px;
+  text-align: center;
+  font-family: 'Uncial Antiqua', cursive;
+  color: rgb(106, 102, 102); 
+  font-size: 37px; 
+  font-weight: 700;
+}
+.circle{
+  z-index: 1;
+  position: relative;
+  left: 715px;
+  top: 360px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 0 solid rgb(0, 0, 0);
+  background-color: rgb(47, 44, 44);
+}
+.circle::before{
+  content: "";
+  color: rgb(106, 102, 102); 
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  width: 170px;
+  height: 170px;
+  border: 1px solid rgb(51, 49, 49);
+  background-color: rgb(67, 66, 66);
+}
+
+/* THE MAIN BUTTONS */
+.redd{
+  width: 180px;
+  height: 180px;
+  background-color: rgb(234, 76, 70);
+  margin: 10px;
+  border-top-right-radius: 200px;
+  box-shadow: -2px -4px 3px rgb(51, 3, 3);
+  border-bottom: 1px solid rgb(51, 3, 3);
+}
+.greenn{
+  width: 180px;
+  height: 180px;
+  background-color: rgb(68, 167, 68);
+  margin: 10px;
+  border-top-left-radius: 200px;
+  box-shadow: -3px -3px 3px rgb(2, 42, 2);
+}
+.yelloww{
+  width: 180px;
+  height: 180px;
+  background-color: rgb(184, 184, 55);
+  margin: 10px;
+  border-bottom-left-radius: 200px;
+  box-shadow: 5px -1px 3px black;
+  padding-right: 10px;
+}
+.bluee{
+  width: 180px;
+  height: 180px;
+  background-color: rgb(67, 67, 165);
+  margin: 10px;
+  border-bottom-right-radius: 200px;
+  box-shadow: -5px -1px 3px black;
+}
+
+/* ---------------------------------- */
+
+/* CURSOR POINTER WHEN HOVER SATATE */
+.redd:hover{
+  cursor: pointer;
+}
+.bluee:hover{
+  cursor: pointer;
+}
+.yelloww:hover{
+  cursor: pointer;
+}
+.greenn:hover{
+  cursor: pointer;
+}
+
+/* #1 styles used to add click and lighting effect for buttons using javascript*/
+.red{
+  box-shadow:   10px -1.5px 70px 5px red;
+  transition: box-shadow 0.5fs ease;
+  transform: translate(0.4px, 1px);
+}
+.blue{
+  box-shadow:   20px 10px 60px 2px rgb(0, 0, 255);
+  transition: box-shadow 0.5fs ease-in-out;
+  transform: translate(-1px, 1px);
+}
+.yellow{
+  box-shadow: 5px 0px 70px 6px yellow;
+  transition: box-shadow 0.5s ease;
+  transform: translate(1px, -1px);
+}
+.green{
+  box-shadow:   -1.5px -10px 70px 3px rgb(19, 195, 19);
+  transition: box-shadow 0.5fs ease;
+  transform: translate(-1px, -1px);
+}
+
+/* ------------------------------*/
+
+
+/* #2 another same styles used to add click and lighting effect for buttons using javascript*/
+.rred{
+  box-shadow:   10px -1.5px 70px 5px red;
+  transition: box-shadow 0.5fs ease;
+}
+.bblue{
+  box-shadow:   20px 10px 60px 2px rgb(0, 0, 255);
+  transition: box-shadow 0.5fs ease-in-out;
+}
+.yyellow{
+  box-shadow: 5px 0px 70px 6px yellow;
+  transition: box-shadow 0.5s ease;
+}
+.ggreen{
+  box-shadow:   -1.5px -10px 70px 3px rgb(19, 195, 19);
+  transition: box-shadow 0.5fs ease;
+}
+/* ---------------------------*/
+
+/* STYLES TRIGGER EVERYTIME THE USER GOT THE ANSWER */
+.win{
+  box-shadow: 0 60px 40px 4px rgb(152, 149, 149); 
+  transition: box-shadow 350ms ease-in-out;
+}
+/* --------------------------- */
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
